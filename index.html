@@ -105,6 +105,49 @@
             display: inline; /* Para que el fondo amarillo solo cubra el texto */
             padding: 5px; /* Espacio alrededor del texto con fondo amarillo */
         }
+
+  /* Estilos para la sección de formulario */
+        .form-section {
+            background-color: black; /* Fondo negro */
+            color: white; /* Texto en blanco */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 1.5rem -0.5rem #000; /* Sombra */
+        }
+
+        /* Estilos para el formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Estilos para el label */
+        label {
+            margin-top: 10px;
+        }
+
+        /* Estilos para el input */
+        input {
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+        }
+
+        /* Estilos para el botón */
+        button {
+            background-color: green; /* Fondo verde */
+            color: white; /* Texto en blanco */
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        /* Estilos para el checkbox */
+        input[type="checkbox"] {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -126,6 +169,21 @@
                 <i class="fab fa-whatsapp whatsapp-icon"></i> Hablemos Ahora
             </a>
         </div>
+    </div>
+
+<div class="form-section">
+        <h2>Formulario de Contacto</h2>
+        <form>
+            <label for="telefono">¿Alguna duda? Te llamamos</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Introduce tu teléfono" required>
+
+            <button type="submit">LLÁMAME GRATIS</button>
+
+            <label>
+                <input type="checkbox" name="politica" required>
+                He leído y acepto la política de privacidad y cookies
+            </label>
+        </form>
     </div>
     <script>
         // Función para iniciar la cuenta regresiva
