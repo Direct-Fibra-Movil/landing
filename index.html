@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Landing Page</title>
+    <title>Tu Página con Header</title>
     <style>
-        /* Estilos CSS para tu landing page */
+        /* Estilos para el header */
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 100px;
+        }
+
+        .phone {
+            font-size: 10px;
+            border: 1px solid orange;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* Estilos generales */
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
@@ -25,16 +44,20 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        /* Puedes agregar más estilos CSS según tus necesidades */
     </style>
 </head>
 <body>
+    <div class="header">
+        <img src="ahorrodirect.png" alt="AhorroDirect" class="logo">
+        <p>
+            Teléfono: <a href="tel:+34616219596" class="phone">616 219 596</a>
+        </p>
+    </div>
     <div class="container">
         <div class="main-content">
             <!-- Contenido de tu landing page -->
             <h1>Bienvenido a Tu Landing Page</h1>
-            <p>Esta es una landing page de ejemplo. Puedes agregar aquí la información que desees mostrar a tus visitantes.</p>
+            <p>Esta es una landing page de ejemplo con un header personalizado. Puedes agregar aquí la información que desees mostrar a tus visitantes.</p>
             <p>¡Personalízala según tus necesidades!</p>
         </div>
     </div>
