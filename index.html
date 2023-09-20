@@ -55,16 +55,17 @@
         }
       /* Estilos para la sección */
         .section {
-            background-image: url('fondofibra.jpeg'); /* Fondo de imagen */
-            background-size: cover; /* Ajusta la imagen al tamaño de la sección */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            background-position: center; /* Centra la imagen */
-            color: white; /* Texto en blanco */
-            height: 400px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+               background-image: url(fondofibra.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
         }
 
         /* Estilos para el botón de WhatsApp */
@@ -105,12 +106,14 @@
         <p>Oferta Válida hasta finalizar el contador <span id="countdown"></span></p>
     </div>
       <div class="section">
-        <h1>
+       <div class="box-section">
+             <h1>
             ¿PAGAS DE MÁS POR TU FIBRA Y <span class="highlighted-text">MÓVIL</span>?
         </h1>
         <a href="https://api.whatsapp.com/send?phone=616219596&amp;text=Quiero%20más%20información%20de%20la%20fibra%20y%20móvil%20de%20FibraDirect" class="whatsapp-button">
             <i class="fab fa-whatsapp whatsapp-icon"></i> Hablemos Ahora
         </a>
+    </div>
     </div>
     <script>
         // Función para iniciar la cuenta regresiva
