@@ -50,14 +50,21 @@
             background-color: red;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 5px;
             font-size: 24px;
         }
-        /* Estilos para la sección */
+      /* Estilos para la sección */
         .section {
-            background-color: #fff; /* Color de fondo blanco para la sección */
-            padding: 20px;
+            background-image: url('fondofibra.jpeg'); /* Fondo de imagen */
+            background-size: cover; /* Ajusta la imagen al tamaño de la sección */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-position: center; /* Centra la imagen */
+            color: white; /* Texto en blanco */
+            height: 400px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         /* Estilos para el botón de WhatsApp */
@@ -67,7 +74,7 @@
             padding: 10px 20px; /* Espacio alrededor del botón */
             text-decoration: none; /* Quita la subrayado del enlace */
             border-radius: 5px; /* Bordes redondeados */
-              box-shadow: 0px 0px 10px 6px #05AC49;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
             display: inline-flex; /* Para que el ícono y el texto estén en línea */
             align-items: center; /* Centra verticalmente el contenido */
         }
@@ -97,11 +104,11 @@
   <div class="countdown">
         <p>Oferta Válida hasta finalizar el contador <span id="countdown"></span></p>
     </div>
-       <div class="section">
+      <div class="section">
         <h1>
             ¿PAGAS DE MÁS POR TU FIBRA Y <span class="highlighted-text">MÓVIL</span>?
         </h1>
-        <a href="https://api.whatsapp.com/send?phone=616219596&text=Quiero%20más%20información%20de%20la%20fibra%20y%20móvil%20de%20FibraDirect" class="whatsapp-button">
+        <a href="https://api.whatsapp.com/send?phone=616219596&amp;text=Quiero%20más%20información%20de%20la%20fibra%20y%20móvil%20de%20FibraDirect" class="whatsapp-button">
             <i class="fab fa-whatsapp whatsapp-icon"></i> Hablemos Ahora
         </a>
     </div>
