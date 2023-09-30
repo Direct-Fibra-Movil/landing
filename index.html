@@ -256,6 +256,41 @@
             display: block;
         }
 
+        /* Estilo para la sección de reseñas */
+    .reviews {
+          background-color: #4E28A9; /* Color de fondo de la sección */
+        color: white; /* Color del texto */
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    /* Estilo para cada reseña */
+    .review {
+        width: 300px; /* Ancho de cada reseña */
+        padding: 20px;
+        background-color: #f0f0f0; /* Color de fondo de cada reseña */
+        margin: 0 10px; /* Espacio entre cada reseña */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra */
+        animation: scroll 10s linear infinite; /* Animación de desplazamiento */
+    }
+
+    /* Estilo para la imagen de cada reseña */
+    .review img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Animación de desplazamiento */
+    @keyframes scroll {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
     </style>
 </head>
 <body>
@@ -294,6 +329,45 @@
    <div class="image-container">
         <img src="gratis.png" alt="Mi Imagen" width="800" height="800">
     </div>
+
+     <section class="reviews">
+        <div class="review">
+            <img src="review1.png" alt="Review 1">
+            <h2>Alberto Suarez</h2>
+            <p>Super contento</p>
+        </div>
+
+       <div class="review">
+            <img src="review2.png" alt="Review 1">
+            <h2>Alberto Suarez</h2>
+            <p>Super contento</p>
+        </div>
+         <div class="review">
+            <img src="review3.png" alt="Review 1">
+            <h2>Alberto Suarez</h2>
+            <p>Super contento</p>
+        </div>
+         <div class="review">
+            <img src="review4.png" alt="Review 1">
+            <h2>Alberto Suarez</h2>
+            <p>Super contento</p>
+        </div>
+         <div class="review">
+            <img src="review5.png" alt="Review 1">
+            <h2>Alberto Suarez</h2>
+            <p>Super contento</p>
+        </div>
+          <div class="review">
+            <img src="review6.png" alt="Review 1">
+            <h2>Alberto Suarez</h2>
+            <p>Super contento</p>
+        </div>
+     <div class="review">
+            <img src="review7.png" alt="Review 1">
+            <h2>Alberto Suarez</h2>
+            <p>Super contento</p>
+        </div>
+    </section>
 
 <section class="faq">
      <details>
