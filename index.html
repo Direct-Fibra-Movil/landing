@@ -247,7 +247,6 @@
         margin-left: 20px;
     }
           .image-container {
-            max-width: 600px;
             width: 100%;
             margin: 0;
             padding: 0;
@@ -305,6 +304,7 @@
             flex-wrap: wrap;
             justify-content: space-between;
             padding: 20px; /* Añadir espacio entre el fondo y los divs */
+             color: white;
         }
 
         .dolor {
@@ -313,11 +313,19 @@
             padding: 20px;
             border: 1px solid #ccc;
             text-align: center;
+            border-radius: 10px;
         }
 
         .dolor img {
             max-width: 100%;
             height: auto;
+        }
+
+         /* Media query para pantallas menores a 535px */
+        @media (max-width: 535px) {
+            .dolor {
+                flex-basis: 100%;
+            }
         }
 
     </style>
@@ -357,24 +365,20 @@
  <section class="dolores">
         <div class="dolor">
             <img src="dolor1.png" alt="Dolor 1">
-            <h2>Dolor 1</h2>
+            <h2>Sin Cambios</h2>
             <p>Estás harto de que te suba el precio cada mes. Son diferentes.</p>
         </div>
         <div class="dolor">
             <img src="dolor2.png" alt="Dolor 2">
-            <h2>Dolor 2</h2>
+            <h2>Transparente</h2>
             <p>No entiendes los conceptos de tu factura ni tu plan.</p>
         </div>
         <div class="dolor">
             <img src="dolor4.png" alt="Dolor 3">
-            <h2>Dolor 3</h2>
+            <h2>Atención 24/7</h2>
             <p>Nadie te soluciona nada cuando llaman.</p>
         </div>
-        <div class="dolor">
-            <img src="dolor3.png" alt="Dolor 4">
-            <h2>Dolor 4</h2>
-            <p>Tendrás un gestor personal que te ayudará a buscar la mejor oferta.</p>
-        </div>
+       
     </section>
    <div class="image-container">
         <img src="gratis.png" alt="Mi Imagen" width="800" height="800">
