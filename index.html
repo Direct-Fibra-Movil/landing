@@ -258,43 +258,63 @@
             display: block;
         }
 
-     /* Estilo para la sección de reseñas */
-    .reviews {
-        background-color: #4E28A9; /* Color de fondo de la sección */
-        color: white; /* Color del texto */
-        display: flex;
-        overflow: hidden;
-        width: 100%;
-    }
+   .reviews-section {
+    text-align: center;
+    padding: 40px 0;
+    overflow: hidden;
+}
 
-    /* Estilo para cada reseña */
-    .review {
-        width: 300px; /* Ancho de cada reseña */
-        padding: 20px;
-        background-color: #15979F; /* Color de fondo de cada reseña */
-        color: white;
-        margin: 0 10px; /* Espacio entre cada reseña */
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra */
-        animation: scroll 10s linear infinite; /* Animación de desplazamiento */
-        border-radius: 10px;
-    }
+.review-container {
+    display: flex;
+    width: max-content;
+    animation: moverEjemplos 100s linear infinite;
+}
 
-    /* Estilo para la imagen de cada reseña */
+.review {
+    width: 300px;
+    padding: 20px;
+    background: #FDFCE8;
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 0 10px; /* Añadido un margen horizontal para separar las reseñas */
+}
+
+.review img {
+    max-width: 100%; /* Hace que la imagen sea responsive */
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Animación de desplazamiento */
+@keyframes moverEjemplos {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Animación de desplazamiento de las reseñas */
+@keyframes scrollReviews {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+
     .review img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 50%;
+        max-width: 50px;
+        height: 50px; /* Tamaño de imagen reducido en dispositivos móviles */
     }
-
-    /* Animación de desplazamiento */
-    @keyframes scroll {
-        0% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
-    }
+}
 
          .dolores {
             background-image: url('fondodolor.png');
@@ -384,67 +404,52 @@
         <img src="gratis.png" alt="Mi Imagen" width="800" height="800">
     </div>
 
-     <section class="reviews">
-      <div class="review">
-        <img src="review1.png" alt="Usuario 1">
-        <h2>Juan Pérez</h2>
-        <p>Excelente servicio, rápido y confiable. La atención al cliente es inigualable y los precios son muy competitivos. ¡Muy recomendado!</p>
+    <div class="reviews-section">
+        <h1>Reseñas de Direct Fibra Móvil</h1>
+        <div class="review-container">
+            <div class="review">
+                <img src="review1.png" alt="Reseña 1">
+                <p>¡💡💳 Increíble experiencia con Direct Fibra Móvil! Los servicios son geniales y no hay permanencia en las líneas móviles, por lo que puedes marcharte cuando quieras. ¡Mucho más de lo que esperaba!</p>
+            </div>
+            <div class="review">
+                <img src="review2.png" alt="Reseña 2">
+                <p>Recomiendo encarecidamente Direct Fibra Móvil. Tuve un tiempo fantástico explorando sus servicios, y lo mejor es que no hay permanencia en las líneas móviles. ¡Encontré las mejores ofertas! 😊👌</p>
+            </div>
+            <div class="review">
+                <img src="review3.png" alt="Reseña 3">
+                <p>Una forma emocionante de ahorrar en energía y gas con Direct Fibra Móvil. Cada plan es único y lleno de ahorro, y además, no hay permanencia en las líneas móviles. ¡Me encantó cada minuto de ser cliente de Direct Fibra Móvil! 💖</p>
+            </div>
+            <div class="review">
+                <img src="review4.png" alt="Reseña 4">
+                <p>Los planes de Direct Fibra Móvil son una excelente manera de ahorrar en tus facturas de energía y gas, y lo mejor es que no hay permanencia en las líneas móviles. Siempre me mantienen ahorrando.</p>
+            </div>
+            <div class="review">
+                <img src="review5.png" alt="Reseña 5">
+                <p>¡Tuve un tiempo increíble con Direct Fibra Móvil! Los servicios son estupendos y no hay compromiso de permanencia en las líneas móviles. Los ahorros son impresionantes. ¡Una visita obligada para los clientes conscientes del costo! 👏</p>
+            </div>
+            <div class="review">
+                <img src="review6.png" alt="Reseña 6">
+                <p>Recomiendo altamente Direct Fibra Móvil. Tuve un tiempo fantástico explorando sus servicios. Tienen los mejores planes de ahorro de energía y gas, ¡y lo mejor es que no hay permanencia en las líneas móviles! 👍</p>
+            </div>
+            <div class="review">
+                <img src="review7.png" alt="Reseña 7">
+                <p>Una manera emocionante de ahorrar en las facturas de energía y gas con Direct Fibra Móvil. Cada plan es único y lleno de ahorro, y no estás atado a un compromiso de permanencia en las líneas móviles. ¡Direct Fibra Móvil siempre tiene las últimas ofertas de ahorro! ✨</p>
+            </div>
+            <div class="review">
+                <img src="review8.png" alt="Reseña 8">
+                <p>Los planes de Direct Fibra Móvil son una excelente manera de mantenerte al día con las últimas opciones de ahorro de energía y gas, y lo mejor es que no hay compromiso de permanencia en las líneas móviles. Siempre estoy ahorrando con Direct Fibra Móvil.</p>
+            </div>
+            <div class="review">
+                <img src="review9.png" alt="Reseña 9">
+                <p>¡💡💳 Increíble experiencia con Direct Fibra Móvil! Los servicios son excelentes, y el ahorro es asombroso. ¡Mucho más de lo que esperaba! Además, no hay compromiso de permanencia en las líneas móviles.</p>
+            </div>
+            <div class="review">
+                <img src="review10.png" alt="Reseña 10">
+                <p>¡💡📈 Tuve una experiencia increíble con la página de Direct Fibra Móvil y el servicio postventa es muy atento. Además, no tienes que preocuparte por el compromiso de permanencia en las líneas móviles!</p>
+            </div>
+        </div>
     </div>
 
-    <div class="review">
-        <img src="review2.png" alt="Usuario 2">
-        <h2>María González</h2>
-        <p>Desde que me cambié a esta empresa, mi conexión a Internet ha sido mucho mejor. Nunca he tenido problemas de velocidad o interrupciones. Estoy muy contenta con el servicio.</p>
-    </div>
-
-    <div class="review">
-        <img src="review3.png" alt="Usuario 3">
-        <h2>Carlos Rodríguez</h2>
-        <p>La instalación de la fibra en mi casa fue rápida y sin complicaciones. Además, el equipo de soporte técnico siempre está dispuesto a ayudar.</p>
-    </div>
-
-    <div class="review">
-        <img src="review4.png" alt="Usuario 4">
-        <h2>Ana López</h2>
-        <p>La relación calidad-precio de los servicios ofrecidos por esta empresa es excepcional. No puedo pedir más, estoy muy satisfecha.</p>
-    </div>
-
-    <div class="review">
-        <img src="review5.png" alt="Usuario 5">
-        <h2>Luis Martínez</h2>
-        <p>Me encanta la velocidad de mi conexión a Internet. Además, la atención al cliente siempre resuelve mis dudas de manera eficiente.</p>
-    </div>
-
-    <div class="review">
-        <img src="review6.png" alt="Usuario 6">
-        <h2>Sofía Ramírez</h2>
-        <p>Estoy muy impresionada con la estabilidad de la conexión de fibra. Nunca he tenido problemas de caídas o interrupciones.</p>
-    </div>
-
-    <div class="review">
-        <img src="review7.png" alt="Usuario 7">
-        <h2>Pablo Torres</h2>
-        <p>La atención al cliente es de primera. Siempre están dispuestos a ayudar y resolver cualquier problema que pueda surgir.</p>
-    </div>
-
-    <div class="review">
-        <img src="review8.png" alt="Usuario 8">
-        <h2>Laura Sánchez</h2>
-        <p>La instalación fue rápida y el servicio ha sido excelente desde entonces. Lo recomiendo a todos mis amigos y familiares.</p>
-    </div>
-
-    <div class="review">
-        <img src="review9.png" alt="Usuario 9">
-        <h2>Javier López</h2>
-        <p>La calidad de la señal de Internet es muy buena. No he tenido problemas con la velocidad en ningún momento.</p>
-    </div>
-
-    <div class="review">
-        <img src="review10.png" alt="Usuario 10">
-        <h2>Isabel Fernández</h2>
-        <p>La facturación es clara y precisa. Nunca he tenido sorpresas desagradables en mi factura mensual.</p>
-    </div>
-    </section>
 
 <section class="faq">
      <details>
