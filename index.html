@@ -348,6 +348,59 @@
             }
         }
 
+
+        /* Estilos para la sección */
+        .section {
+            background-image: url(slider3.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            height: 400px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Pseudo-elemento ::before para la capa oscura opaca */
+        .section::before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.5); /* Capa oscura opaca */
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        /* Estilos para el botón de WhatsApp */
+        .whatsapp-button {
+            background-color: #05AC49; /* Color de fondo verde */
+            color: #fff; /* Texto blanco */
+            padding: 10px 20px; /* Espacio alrededor del botón */
+            text-decoration: none; /* Quita el subrayado del enlace */
+            border-radius: 5px; /* Bordes redondeados */
+                box-shadow: 0px 0px 10px 6px #05AC49;
+            display: inline-flex; /* Para que el ícono y el texto estén en línea */
+            align-items: center; /* Centra verticalmente el contenido */
+        }
+
+        /* Estilos para el icono de WhatsApp */
+        .whatsapp-icon {
+            font-size: 24px; /* Tamaño del ícono */
+            margin-right: 10px; /* Espacio entre el ícono y el texto */
+        }
+
+        /* Estilos para el texto con fondo amarillo */
+        .highlighted-text {
+            background: #ffe200; /* Fondo amarillo */
+            color: #000; /* Texto negro */
+            display: inline; /* Para que el fondo amarillo solo cubra el texto */
+            padding: 5px; /* Espacio alrededor del texto con fondo amarillo */
+        }
+
     </style>
 </head>
 <body>
@@ -409,55 +462,20 @@
        
     </section>
    <div class="image-container">
-        <img src="gratis.png" alt="Mi Imagen" width="800" height="800">
+        <img src="slider2.png.png" alt="Mi Imagen" width="800" height="800">
     </div>
-
-    <div class="reviews-section">
-        <h1>Reseñas de Direct Fibra Móvil</h1>
-        <div class="review-container">
-            <div class="review">
-                <img src="review1.png" alt="Reseña 1">
-                <p>¡💡💳 Increíble experiencia con Direct Fibra Móvil! Los servicios son geniales y no hay permanencia en las líneas móviles, por lo que puedes marcharte cuando quieras. ¡Mucho más de lo que esperaba!</p>
-            </div>
-            <div class="review">
-                <img src="review2.png" alt="Reseña 2">
-                <p>Recomiendo encarecidamente Direct Fibra Móvil. Tuve un tiempo fantástico explorando sus servicios, y lo mejor es que no hay permanencia en las líneas móviles. ¡Encontré las mejores ofertas! 😊👌</p>
-            </div>
-            <div class="review">
-                <img src="review3.png" alt="Reseña 3">
-                <p>Una forma emocionante de ahorrar en energía y gas con Direct Fibra Móvil. Cada plan es único y lleno de ahorro, y además, no hay permanencia en las líneas móviles. ¡Me encantó cada minuto de ser cliente de Direct Fibra Móvil! 💖</p>
-            </div>
-            <div class="review">
-                <img src="review4.png" alt="Reseña 4">
-                <p>Los planes de Direct Fibra Móvil son una excelente manera de ahorrar en tus facturas de energía y gas, y lo mejor es que no hay permanencia en las líneas móviles. Siempre me mantienen ahorrando.</p>
-            </div>
-            <div class="review">
-                <img src="review5.png" alt="Reseña 5">
-                <p>¡Tuve un tiempo increíble con Direct Fibra Móvil! Los servicios son estupendos y no hay compromiso de permanencia en las líneas móviles. Los ahorros son impresionantes. ¡Una visita obligada para los clientes conscientes del costo! 👏</p>
-            </div>
-            <div class="review">
-                <img src="review6.png" alt="Reseña 6">
-                <p>Recomiendo altamente Direct Fibra Móvil. Tuve un tiempo fantástico explorando sus servicios. Tienen los mejores planes de ahorro de energía y gas, ¡y lo mejor es que no hay permanencia en las líneas móviles! 👍</p>
-            </div>
-            <div class="review">
-                <img src="review7.png" alt="Reseña 7">
-                <p>Una manera emocionante de ahorrar en las facturas de energía y gas con Direct Fibra Móvil. Cada plan es único y lleno de ahorro, y no estás atado a un compromiso de permanencia en las líneas móviles. ¡Direct Fibra Móvil siempre tiene las últimas ofertas de ahorro! ✨</p>
-            </div>
-            <div class="review">
-                <img src="review8.png" alt="Reseña 8">
-                <p>Los planes de Direct Fibra Móvil son una excelente manera de mantenerte al día con las últimas opciones de ahorro de energía y gas, y lo mejor es que no hay compromiso de permanencia en las líneas móviles. Siempre estoy ahorrando con Direct Fibra Móvil.</p>
-            </div>
-            <div class="review">
-                <img src="review9.png" alt="Reseña 9">
-                <p>¡💡💳 Increíble experiencia con Direct Fibra Móvil! Los servicios son excelentes, y el ahorro es asombroso. ¡Mucho más de lo que esperaba! Además, no hay compromiso de permanencia en las líneas móviles.</p>
-            </div>
-            <div class="review">
-                <img src="review10.png" alt="Reseña 10">
-                <p>¡💡📈 Tuve una experiencia increíble con la página de Direct Fibra Móvil y el servicio postventa es muy atento. Además, no tienes que preocuparte por el compromiso de permanencia en las líneas móviles!</p>
-            </div>
+    <div class="section">
+        <div class="box-section" style="z-index: 2;">
+            <h2 style="width:90%; margin: 20px auto;">
+                Escríbenos ahora y a tu Pack de Fibra y Móvil <br><br>le incluimos una línea móvil extra <br><br> <span class="highlighted-text"> TOTALMENTE GRATIS</span>
+            </h2>
+            <a href="https://api.whatsapp.com/send?phone=616219596&amp;text=Quiero%20más%20información%20de%20la%20fibra%20y%20móvil%20de%20FibraDirect" class="whatsapp-button">
+                <i class="fab fa-whatsapp whatsapp-icon"></i> Hablemos Ahora
+            </a>
         </div>
     </div>
 
+    
 
 <section class="faq">
      <details>
@@ -511,6 +529,55 @@
         <p>Dispones de la mejor cobertura a nivel Nacional tanto en Fibra como en datos móviles.</p>
     </details>
 </section>
+
+    <div class="reviews-section">
+        <h1>Reseñas de Direct Fibra Móvil</h1>
+        <div class="review-container">
+            <div class="review">
+                <img src="review1.png" alt="Reseña 1">
+                <p>¡💡💳 Increíble experiencia con Direct Fibra Móvil! Los servicios son geniales y no hay permanencia en las líneas móviles, por lo que puedes marcharte cuando quieras. ¡Mucho más de lo que esperaba!</p>
+            </div>
+            <div class="review">
+                <img src="review2.png" alt="Reseña 2">
+                <p>Recomiendo encarecidamente Direct Fibra Móvil. Tuve un tiempo fantástico explorando sus servicios, y lo mejor es que no hay permanencia en las líneas móviles. ¡Encontré las mejores ofertas! 😊👌</p>
+            </div>
+            <div class="review">
+                <img src="review3.png" alt="Reseña 3">
+                <p>Una forma emocionante de ahorrar en energía y gas con Direct Fibra Móvil. Cada plan es único y lleno de ahorro, y además, no hay permanencia en las líneas móviles. ¡Me encantó cada minuto de ser cliente de Direct Fibra Móvil! 💖</p>
+            </div>
+            <div class="review">
+                <img src="review4.png" alt="Reseña 4">
+                <p>Los planes de Direct Fibra Móvil son una excelente manera de ahorrar en tus facturas de energía y gas, y lo mejor es que no hay permanencia en las líneas móviles. Siempre me mantienen ahorrando.</p>
+            </div>
+            <div class="review">
+                <img src="review5.png" alt="Reseña 5">
+                <p>¡Tuve un tiempo increíble con Direct Fibra Móvil! Los servicios son estupendos y no hay compromiso de permanencia en las líneas móviles. Los ahorros son impresionantes. ¡Una visita obligada para los clientes conscientes del costo! 👏</p>
+            </div>
+            <div class="review">
+                <img src="review6.png" alt="Reseña 6">
+                <p>Recomiendo altamente Direct Fibra Móvil. Tuve un tiempo fantástico explorando sus servicios. Tienen los mejores planes de ahorro de energía y gas, ¡y lo mejor es que no hay permanencia en las líneas móviles! 👍</p>
+            </div>
+            <div class="review">
+                <img src="review7.png" alt="Reseña 7">
+                <p>Una manera emocionante de ahorrar en las facturas de energía y gas con Direct Fibra Móvil. Cada plan es único y lleno de ahorro, y no estás atado a un compromiso de permanencia en las líneas móviles. ¡Direct Fibra Móvil siempre tiene las últimas ofertas de ahorro! ✨</p>
+            </div>
+            <div class="review">
+                <img src="review8.png" alt="Reseña 8">
+                <p>Los planes de Direct Fibra Móvil son una excelente manera de mantenerte al día con las últimas opciones de ahorro de energía y gas, y lo mejor es que no hay compromiso de permanencia en las líneas móviles. Siempre estoy ahorrando con Direct Fibra Móvil.</p>
+            </div>
+            <div class="review">
+                <img src="review9.png" alt="Reseña 9">
+                <p>¡💡💳 Increíble experiencia con Direct Fibra Móvil! Los servicios son excelentes, y el ahorro es asombroso. ¡Mucho más de lo que esperaba! Además, no hay compromiso de permanencia en las líneas móviles.</p>
+            </div>
+            <div class="review">
+                <img src="review10.png" alt="Reseña 10">
+                <p>¡💡📈 Tuve una experiencia increíble con la página de Direct Fibra Móvil y el servicio postventa es muy atento. Además, no tienes que preocuparte por el compromiso de permanencia en las líneas móviles!</p>
+            </div>
+        </div>
+    </div>
+
+
+    
       <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
     emailjs.init("vD8AirUimJoqPvHvw"); // Reemplaza "tu_usuario_emailjs" con tu ID de usuario de EmailJS
