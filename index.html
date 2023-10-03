@@ -370,18 +370,26 @@
     </div>
 <div class="form-section">
         <h2>Formulario de Contacto</h2>
-        <form>
-            <label for="telefono">¿Alguna duda? Te llamamos</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="Introduce tu teléfono" required>
+   <form id="miFormulario">
+    <label for="telefono">¿Alguna duda? Te llamamos</label>
+    <input id="telefono" maxlength="9" type="tel" placeholder="Introduce tu teléfono" required>
 
-            <button type="submit">LLÁMAME GRATIS</button>
+    <button type="submit">LLÁMAME GRATIS</button>
 
-            <label>
-                <input type="checkbox" name="politica" required>
-                He leído y acepto la política de privacidad y cookies
-            </label>
-        </form>
+    <label>
+        <input type="checkbox" name="politica" required>
+        He leído y acepto la política de privacidad y cookies
+    </label>
+
+    <!-- Agregar un elemento para mostrar el mensaje de error -->
+    <div id="errorTelefono" style="color: red;"></div>
+</form>
+<div id="mensaje-exito" style="display: none;">
+    <p>Nos pondremos en contacto contigo en menos de 24 horas. Si es fin de semana, te contactaremos el lunes por la mañana.</p>
+</div>
+
     </div>
+
  <section class="dolores">
         <div class="dolor">
             <img src="dolor5.png" alt="Dolor 1">
