@@ -530,6 +530,54 @@
 
         // Iniciar la cuenta regresiva cuando se carga la página
         startCountdown();
+
+
+           // Obtener el formulario
+const formulario = document.getElementById('miFormulario');   
+
+// Obtener el campo de entrada de teléfono
+const telefonoInput = document.getElementById('telefono');
+
+// Obtener el elemento del mensaje de error
+const errorTelefono = document.getElementById('errorTelefono');
+
+// Agregar un event listener para el evento "input" del campo de teléfono
+telefonoInput.addEventListener('input', function(event) {
+    // Verificar si el valor ingresado contiene espacios en blanco
+    if (/\s/.test(telefonoInput.value)) {
+        errorTelefono.textContent = 'No se permiten espacios en blanco';
+        telefonoInput.value = telefonoInput.value.replace(/\s/g, ''); // Eliminar espacios en blanco
+    } else {
+        errorTelefono.textContent = ''; // Limpiar el mensaje de error si es válido
+    }
+});
+
+// Agregar un event listener para el evento "submit" del formulario
+formulario.addEventListener('submit', function(event) {
+event.preventDefault();
+    // Verificar si el valor ingresado contiene exactamente 9 dígitos
+    if (!/^\d{9}$/.test(telefonoInput.value)) {
+        errorTelefono.textContent = 'Utiliza un teléfono válido';
+        event.preventDefault(); // Evitar el envío del formulario si hay un error
+    } else {
+        errorTelefono.textContent = ''; // Limpiar el mensaje de error si es válido
+
+        // Ocultar el formulario y mostrar el mensaje de éxito
+        formulario.style.display = 'none';
+        document.getElementById('mensaje-exito').style.display = 'block';
+
+        // Enviar el correo utilizando EmailJS
+        emailjs.send("service_2b9m5ed", "template_850makm", {
+            telefono: telefonoInput.value
+        })
+        .then(function(response) {
+            console.log("Correo enviado con éxito:", response);
+        })
+        .catch(function(error) {
+            console.error("Error al enviar el correo:", error);
+        });
+    }
+});
     </script>
 </body>
 </html>
